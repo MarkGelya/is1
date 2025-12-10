@@ -30,7 +30,7 @@ jobs:
           name: java-app
           path: '${{ github.workspace }}/target/*.jar'
 
-      - name: Run SpotBugs (SAST) for lab1
+      - name: Run SpotBugs (SAST)
         working-directory: .
         run: mvn spotbugs:spotbugs
 
@@ -38,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: spotbugs-report
-          path: lab1/target/spotbugs.html
+          path: target/spotbugs.html
