@@ -1,6 +1,6 @@
 # Схема базы данных
 
-![DB schema](docs/img/db.pdf)
+![DB schema](docs/img/db.png)
 
 1. User - данные для аутентификации и идентификации
 2. Profile - хранение персональной информации пользователя
@@ -178,5 +178,5 @@ userRepository.save(user);
 
 Отчёты из CI/CD GitHub Actions:
 
-![SpotBugs report](docs/img/sb.pdf)
+![SpotBugs report](docs/img/sb.png)
 
