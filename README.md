@@ -1,6 +1,6 @@
 # Схема базы данных
 
-![DB schema](docs/img/db.png)
+![DB schema](docs/img/db.pdf)
 
 1. User - данные для аутентификации и идентификации
 2. Profile - хранение персональной информации пользователя
@@ -57,7 +57,7 @@ curl -X POST http://localhost:8080/auth/login \
 ```bash
 curl -X POST http://localhost:8080/api/user/data \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer YOUR_JWT_TOKEN" \
+-H "Authorization: Bearer pdf" \
 -d '{
   "content": "content number 1"
 }'
@@ -77,7 +77,7 @@ curl -X POST http://localhost:8080/api/user/data \
 
 ```bash
 curl -X GET http://localhost:8080/api/user/data \
--H "Authorization: Bearer YOUR_JWT_TOKEN"
+-H "Authorization: Bearer JWT_TOKEN"
 ```
 
 Ответ:
@@ -178,5 +178,5 @@ userRepository.save(user);
 
 Отчёты из CI/CD GitHub Actions:
 
-![SpotBugs report](docs/img/sb.png)
+![SpotBugs report](docs/img/sb.pdf)
 
