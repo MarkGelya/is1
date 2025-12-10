@@ -13,4 +13,4 @@ spring:
       enabled: true
 
 jwt:
-  secret: "jwt-secret"
+  secret: "jwt-secret jwt-secret jwt-secret jwt-secret jwt-secret jwt-secret jwt-secret jwt-secret"
